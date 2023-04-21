@@ -409,3 +409,37 @@ input[type="button"]{
 .para-2 a{
     color: #49c1a2; 
 }
+
+/* -----Login ------*/ 
+.login-box{
+    width: 360px;
+    height: 280px;
+    margin:auto; 
+    border-radius: 3px;
+   
+}
+
+
+.login-box p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.login-box form{
+    width: 300px;
+    margin-left: 20px;
+}
+.login-box form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.login-box form input{
+    width: 100%;
+    padding: 7px;
+    border: none; 
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+}
