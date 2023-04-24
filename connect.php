@@ -6,12 +6,16 @@ $dbPassword = '';
 $dbName = 'Herfetna';
 
 // Create a database connection
-$conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
+$mysqli = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
 // Check the connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
 }
+
+// Return the database connection object
+return $mysqli;
+
 ?>
 
 
