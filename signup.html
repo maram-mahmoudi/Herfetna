@@ -1,27 +1,29 @@
 <html>
     <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Sign Up</title>
         <link rel="stylesheet" href="style.css">
     </head>
-
+    
     <body>
         <div class="signup-box">
             <h1>Sign Up</h1>
             <h4> It is free!</h4>
-            <form action="">
-                <label> First Name </label>
-                <input type="text" placeholder="">
-                <label> Last Name </label>
-                <input type="text" placeholder="">
-                <label> Gender </label>
-                <input type="text" placeholder="">
-                <label> Email </label>
-                <input type="email" placeholder="">
-                <label> Password </label>
-                <input type="password" placeholder="">
-                <label> Confirm Password </label>
-                <input type="password" placeholder="">
-                <input type="button" value="Sign Up">
+            <form method="post "action="signup.php">
+                <label for="firstname"> First Name </label>
+                <input type="text" placeholder="" id="firstname" name="firstname">
+                <label for="lastname"> Last Name </label>
+                <input type="text" placeholder="" id="lastname" name="lastname">
+                <label for="gender"> Gender </label>
+                <input type="text" placeholder="" id="gender" name="gender">
+                <label for="email"> Email </label>
+                <input type="email" placeholder="" id="email" name="email">
+                <label for="password"> Password </label>
+                <input type="password" placeholder="" id="password" name="password">
+                <label for="password_confirmation"> Confirm Password </label>
+                <input type="password" placeholder="" id="password_confirmation" name="password_confirmation">
+                <!--input type="button" value="Sign Up"-->
+                <button>Sign Up</button>
             </form>
             <p> By clicking the sign up button, you agree to our <br>
             <a href="#">Terms and conditions</a> and <a href="#"> Policies</a> </p> 
