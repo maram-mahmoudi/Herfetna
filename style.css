@@ -1,14 +1,13 @@
 
-
 *{
     margin: 0;
     padding: 0;
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true);
+    background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/cover.jpg?raw=true);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -43,7 +42,7 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #c599cf;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -69,7 +68,7 @@ nav{
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px; 
+    font-size: 30px; 
     color: #fff
 }
 
@@ -86,8 +85,8 @@ nav{
 }
 
 .btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #c599cf;
+    background: #c599cf;
     transition: 1s;
 }
 
@@ -104,7 +103,7 @@ nav .fa{
       }
       .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #fff3f3;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -125,24 +124,26 @@ nav .fa{
       }
 }
 
-/* css for the 2nd section */
+/*------------------------------------ navigate by artist --------------------------------------------*/
 
-.course{
+.by-artist{
     width: 80% ;
     margin: auto;
     text-align: center;
     padding-top: 100px ;
 }
 h1{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 600;
+    padding-bottom: 30px;
 }
+
 p{
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .row {
@@ -151,7 +152,7 @@ p{
     justify-content: space-between;
 }
 
-.course-col{
+.by-artist-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -165,7 +166,7 @@ h3{
    font-weight: 600;
    margin: 10px 0;    
 }
-.course-col:hover{
+.by-artist-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
@@ -175,22 +176,26 @@ h3{
     }
 }
 
-/* the third section */
+/* ---------------------------------------shopping by Art Type -------------------------------------- */
 
-.campus{
+.art-style{
     width: 80%;
     margin:auto;
     text-align: center;
     padding-top: 50px;
 }
-.campus-col{
+.art-style-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.campus-col img{
+
+.art-style h1{
+  padding-bottom: 30px;
+}
+.art-style-col img{
     width: 100%;
     display: block;
 }
@@ -204,7 +209,7 @@ h3{
     transition: 0.5s ;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background: rgba(171, 122, 186, 0.7);
 }
 .layer h3{
     width: 100%;
@@ -223,33 +228,10 @@ h3{
     opacity: 1;
 
 }
-/* for the forth section */
-.facilities{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.facilities-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-.facilities-col img{
-    width: 100%;
-    border-radius:10px;
-}
-.facilities-col p{
-    padding: 0;
-} 
-.facilities-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
-}
 
-/* testimonials */
+
+
+/* -----------------------------------testimonials -----------------------------------------------*/
 .testimonials{
     width: 80%;
     margin: auto;
@@ -281,7 +263,7 @@ h3{
     text-align: left;
 }
 .testimonial-col .fa{
-    color: #f44336;
+    color: #c67fcd;
 }
 @media(max-width:700px){
     .testimonial-col img{
@@ -290,7 +272,7 @@ h3{
     }
 }
 
-/* footer */ 
+/* -----------------------------------footer-------------------------------------------- */ 
 .footer{
     width: 100%;
     text-align: center;
@@ -311,9 +293,9 @@ h3{
 }
 
 .sub-header{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true);
+    background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/annie.jpg?raw=true);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -321,7 +303,7 @@ h3{
 }
 
 .sub-header h1{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .about-us{
     width: 80%; 
@@ -335,119 +317,205 @@ h3{
 }
 .about-col img{
     width: 100%; 
+    padding-top: 50;
 }
 .about-col h1{
     padding-top: 0;
 }
 .about-col p{
     padding: 15px 0 25px;
+    font-size: medium;
+    
 }
 
 .click{
-    border: 1px solid #f44336;
+    border: 1px solid #cca0d6;
     background: transparent;
-    color: #f44336;
+    color: #cb88c9;
 }
 .click:hover{
     color: #fff
 }
+/*-------------sign up sign in header------------------*/ 
+.sign{
+  height: 45vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/annie.jpg?raw=true);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  
+}
 
-/* ------ Sign Up -------*/
+.sign h1{
+  margin-top: 50px;
+}
 
-.signup-box{
+
+/* ----------------------------------------------- Sign Up -------------------------------------------------------*/
+.signup-box {
+    padding-top: 30;
     width: 360px;
-    height: 620px;
+    height: auto;
     margin: auto;
-}
-
-.signup-box h1{
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-box h1 {
     text-align: center;
-    padding-top: 15px;
-}
-.signup-box h4{
+    margin-top: 0;
+  }
+  
+  .signup-box h4 {
     text-align: center;
-}
-.signup-box form{
-    width: 300px;
-    margin-left: 20px;
-}
-.signup-box form label{
-    display: flex;
+    margin-top: 5px;
+  }
+  
+  .signup-box form {
     margin-top: 20px;
-    font-size: 18px;
-}
-.signup-box form input{
+
+  }
+  
+  .signup-box form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .signup-box form select,
+  .signup-box form input[type="text"],
+  .signup-box form input[type="email"],
+  .signup-box form input[type="password"] {
     width: 100%;
-    padding: 7px;
-    border: none; 
-    border: 1px solid grey;
-    border-radius: 6px;
+    padding: 8px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     outline: none;
-}
-
-/*input[type="button"]{
-    width: 320; 
-    height:35px; 
-    margin-top: 20px;
-    border: none; 
-    background-color: #49c1a2;
-    color: white;
-}
-*/
-.signup-box button{
-    width: 320; 
-    height:35px; 
-    margin-top: 20px;
-    border: none; 
-    background-color: #49c1a2;
-    color: white;
-}
-.signup-box p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 15px;
-}
-
-.para-2{
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    margin-top: -10px;
-}
-.para-2 a{
-    color: #49c1a2; 
-}
-
-/* -----Login ------*/ 
-.login-box{
-    width: 360px;
-    height: 280px;
-    margin:auto; 
-    border-radius: 3px;
-   
-}
-
-
-.login-box p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 15px;
-}
-
-.login-box form{
-    width: 300px;
-    margin-left: 20px;
-}
-.login-box form label{
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-}
-.login-box form input{
+  }
+  
+  .signup-box form select {
+    margin-bottom: 10px;
+  }
+  
+  .signup-box button {
+    display: block;
     width: 100%;
-    padding: 7px;
-    border: none; 
-    border: 1px solid grey;
-    border-radius: 6px;
-    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #49c1a2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .signup-box button:hover {
+    background-color: #5bc7b7;
+  }
+  
+  .signup-box p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-box p a {
+    color: #49c1a2;
+    text-decoration: none;
+  }
+  
+  .para-2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .para-2 a {
+    color: #49c1a2;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-box {
+      width: 100%;
+    }
+  }
+
+/* ---------------------------------------Login -------------------------------------------------*/ 
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
+
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.login-box form {
+  width: 100%;
+}
+
+.login-box form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.login-box form input[type="email"],
+.login-box form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-box button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #3aaf91;
+}
+
+/* -------------------------------------- index.php --------------------------------------------------*/ 
+.index {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+  
+  
+  
+  
+  
+  
+  

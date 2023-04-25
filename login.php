@@ -20,11 +20,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             session_regenerate_id();
             
-            $_SESSION["user_id"] = $user["id"];
+            $_SESSION["user_id"] = $user["artisan_ID"];
             
             header("Location: index.php");
             exit;
         }
+        else{
+            print("password not verified ay haga"); 
+        }
+        
+    }
+    else {
+        print("whatver");
     }
     
     $is_invalid = true;
@@ -43,6 +50,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </head>
 
     <body>
+    <section class="sign">
+        <nav> 
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>  
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <!--li><a href="">CONTACT</a></li-->
+                    <li><a href="signup.html">SIGN IN</a></li>
+                    <li><a href="shoppingCart.html">SHOPPING CART</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+        <h1>  Welcome to Our Community </h1>
+    </section>
+
         <div class="login-box">
             <h1>Login</h1>
 

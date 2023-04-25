@@ -3,7 +3,12 @@
 <head>
     <meta name="viewport" c.ontent="with=device-width, initial-scale=1.0">
     <title> Herfetna Platform </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="slider.css">
+
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    
+
 </head>
 
 <body>
@@ -14,64 +19,138 @@
                 <ul>  
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutUs.html">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <!--li><a href="">CONTACT</a></li-->
                     <li><a href="signup.html">SIGN IN</a></li>
+                    <li><a href="shoppingCart.html">SHOPPING CART</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-    <div class="text-box">w
+    <div class="text-box">
         <h1> HERFETNA PLATFORM </h1>
         <p> We help to preserve the legacy of the handicrafts!</p>
-        <a href="" class="btn"> Get to know more! </a>
+        <a href="aboutUs.html" class="btn"> Get to know more! </a>
     </div>
     </section>
 
 
 
-    <!-- search by artist -->
-    <section class="course">
-        <h1> artist name!</h1>
-        <p>whatever u wanna say again</p>
+    <!------------------------------------ search by artist ------------------------------------------>
+    <section class="by-artist">
+        <h1> Find Your Favourite Artist Now!</h1>
+        <p></p>
 
-        <div class="row">
-            <div class="course-col">
-                <h3>intermedite</h3>
-                <p>write any explaination </p>   
-            </div>
-            <div class="course-col">
-                <h3>anything</h3>
-                <p>any explaination</p>   
-            </div>
-            <div class="course-col">
-                <h3> i ll think what to write later </h3>
-                <p> write any explanation</p>   
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/wood_maker.jpg?raw=true" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jane Philips</h2>
+                            <p class="description">Hi, I'm Sarah Smith, a glass artist from Seattle, Washington.
+                                I've been working with glass for over a decade and specialize in blown and fused glass pieces.
+                                My work often features vibrant colors and organic shapes, inspired by the natural world and my surroundings.
+                                I love experimenting with different techniques and pushing the boundaries of what's possible with glass.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                   
+                  
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/photographer.jpg?raw=true" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jacob Jensen</h2>
+                            <p class="description">Hello, I'm Jacob Jensen, a wood artist from Portland, Oregon.
+                                I create functional and decorative pieces using a variety of woods and finishes. 
+                                My work is all about simplicity and minimalism,
+                                and I'm constantly experimenting with new designs and techniques to bring my vision to life. feel free to explore my collection and give feedback. <br></p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                   
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/female%20painter.jpg?raw=true" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Tasha Maccoy</h2>
+                            <p class="description">Hello there, I'm Tasha Maccoy, a glass artist based in San Francisco, California.
+                                I've been creating stained glass pieces for several years now and draw inspiration from the beauty of the natural world and cultural symbolism. 
+                                My work is highly intricate and detailed, and I love exploring new techniques and approaches to glass art.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+        
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/Hindi-Art-for-Busniness-Leaders.jpg?raw=true" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Lily James</h2>
+                            <p class="description">Hola, I'm Lily James, an embroidery artist from Mexico City, Mexico.
+                                I specialize in creating colorful and detailed embroidery pieces, drawing inspiration from the rich cultural traditions of my home country.
+                                I love exploring new motifs and techniques and am passionate about keeping the art of embroidery alive and thriving.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div> 
+                </div>
             </div>
 
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
 
     </section>
 
-    <!-- shop by type of art -->
-    <section class="campus">
-        <h1> Shop by type. </h1>
-        <p>whatever u wanna say again</p>
+    <!--------------------------- shop by type of art ------------------------------------------->
+    <section class="art-style">
+        <h1> Shop By Art Style. </h1>
+        <!--p>whatever u wanna say again</p-->
 
         <div class="row">
-            <div class="campus-col">
-                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/stained-glass-cat-art-peggy-collins.jpg?raw=true" alt="">    <!-- you need to add an iamage here-->
+            <div class="art-style-col">
+                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/P08586-P00018f.jpg?raw=true" alt="">    <!-- you need to add an iamage here-->
                 <div class="layer">
                     <h3> Glass Art</h3> 
                 </div>
             </div>
-            <div class="campus-col">
-                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/Kcho-R.E.C.-Rectifying-the-Course-.-Image-via-artsobserver.com_.jpg?raw=true" alt="">    <!-- you need to add an iamage here-->
+            <div class="art-style-col">
+                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/art-and-airplanes-reclaimed-wood-art-4.jpg?raw=true" alt="">    <!-- you need to add an iamage here-->
                 <div class="layer">
                     <h3> Wood Art & sculptures </h3> 
                 </div>
             </div>
-            <div class="campus-col">
+            <div class="art-style-col">
                 <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images/landscape-embroidery-sew-beautiful-3.jpg?raw=true" alt="">    <!-- you need to add an iamage here-->
                 <div class="layer">
                     <h3> Embroidery  </h3> 
@@ -80,47 +159,20 @@
         </div>
     </section>
 
-    <!--facilities -->
-    <section class="facilities">
-        <h1>our facilities</h1>
-        <p> explain what we offer <br>
-        </p>
-        
-        <div class="row">
-            <div class="facilities-col">
-                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true" alt=""> <!--again add a pic here-->
-                <h3> selling platform </h3>
-                <p> write any paragraph here .........
-                </p>
-            </div>
-            <div class="facilities-col">
-                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true" alt=""> <!--again add a pic here-->
-                <h3> online gallery </h3>
-                <p> write  related paragraph here .............
-                </p>
-            </div>
-            <div class="facilities-col">
-                <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true" alt=""> <!--again add a pic here-->
-                <h3> is there a third section ?</h3>
-                <p> write any related paragraph here 
-                </p>
-            </div>
-        </div>
-    </section>
+    
 
-    <!--  testimonials-->
+    <!-------------------------------------------  testimonials------------------------------------>
     <section class="testimonials">
-        <h1> what they think</h1>
-        <p> write ppl feedback</p>
+        <h1> What Our Customers Think</h1>
+        <p> </p>
 
         <div class="row">
             <div class="testimonial-col">
                 <img src="https://github.com/maram-mahmoudi/Herfetna/blob/main/images%20/Moroccan-handicrafts.png?raw=true" alt=""> <!--u add image-->
                 <div>
-                    <p>here they are gonna write what they think about 
-                    our website. and artistis and customer service.
+                    <p> Good handmade stuff and an affordable price and quick delivery.  
                     </p>
-                    <h3>write name of the reviewer</h3>
+                    <h3>Sarah Smith</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -130,10 +182,9 @@
             <div class="testimonial-col">
                 <img src="images/user1.png" alt=""> <!--u add image-->
                 <div>
-                    <p>here they are gonna write what they think about 
-                    our website. and artistis and customer service.
+                    <p> I loved their sevice, the products are of high quality and the service is 
                     </p>
-                    <h3>write name of the reviewer</h3>
+                    <h3> Shaun Lee</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -143,7 +194,9 @@
         </div>
 
     </section>
-    <!--footer-->
+
+
+    <!--------------------footer------------------------------->
     <section class="footer">
         <h4>about us</h4>
         <p>write anything here</p>
@@ -166,12 +219,18 @@
     function hideMenu(){
         navLinks.style.right= "-200px"
     }
-</script>
 
+    
+</script>
 
 </body>
 
+<!--  swiper JavaScript -->
 
+<script src="./swiper-bundle.min.js"></script>
 
+<!-- JavaScript -->
+     
+<script src="./slider.js"></script>
 
 </html>
