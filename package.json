@@ -1,0 +1,22 @@
+{
+	"name": "Herfetna",
+	"author": "Alex Bobay, Cameron Gmitra, and Maram Mahmoudi",
+	"description": "A website dedicated to the buying and selling of handcrafts",
+	"keywords": [
+		"Handcraft",
+		"Shopping"
+	],
+	"license": "MIT",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "^4.18.2"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/maram-mahmoudi/Herfetna"
+	}
+}

@@ -13,6 +13,28 @@ if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
 
+
+class ConnectDB {
+    private $con;
+
+    function __construct() {
+        $this->con = $GLOBALS['mysqli'];
+    }
+
+    function getData() {
+        $sql= "SELECT * FROM handcraft";
+
+        $result = mysqli_query($this->con, $sql); 
+
+        if(mysqli_num_rows($result)>0){
+            return $result;
+        }
+    }
+}
+
+// Create an instance of the ConnectDB class
+$db = new ConnectDB();
+
 // Return the database connection object
 return $mysqli;
 
