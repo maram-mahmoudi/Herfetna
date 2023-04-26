@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <li><a href="aboutUs.html">ABOUT</a></li>
                     <!--li><a href="">CONTACT</a></li-->
                     <li><a href="signup.html">SIGN IN</a></li>
-                    <li><a href="glassShop.php">SHOPPING CART</a></li>
+                    <li><a href="Shop.php">SHOPPING CART</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu"></i>

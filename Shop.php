@@ -13,7 +13,7 @@
             
             if (in_array($_POST['handcraft_id'], $item_array_id)){
                 echo"<script>alert('Handcraft already added to the cart!') </script>";
-                echo"<script>window.location = 'glassShop.php'</script>"; 
+                echo"<script>window.location = 'Shop.php'</script>"; 
             }else{
                 $count= count($_SESSION['cart']);
                 $item_array = array('handcraft_id'=> $_POST['handcraft_id']);
