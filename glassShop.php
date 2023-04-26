@@ -9,6 +9,16 @@
     if(isset($_POST['add'])){
         //print_r($_POST['handcraft_id']);
         if(isset($_SESSION['cart'])){
+            $item_array_id = array_column($_SESSION['cart'], "handcraft_id");    
+            
+            if (in_array($_POST['handcraft_id'], $item_array_id)){
+                echo"<script>alert('Handcraft already added to the cart!') </script>";
+                echo"<script>window.location = 'glassShop.php'</script>"; 
+            }else{
+                $count= count($_SESSION['cart']);
+                $item_array = array('handcraft_id'=> $_POST['handcraft_id']);
+                $_SESSION['cart'][$count]= $item_array; 
+            }
 
         }else{
             $item_array = array('handcraft_id'=> $_POST['handcraft_id']);
@@ -38,6 +48,7 @@
 </head>
 
 <body>
+    <?php require_once("shopheader.php"); ?>
     <div class="container">
         <div class="row text-center py-5">
             <?php
