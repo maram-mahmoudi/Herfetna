@@ -26,7 +26,7 @@ function product($handcraft_type, $handcraft_price, $year, $weight, $handcraft_i
                             </h5>
                             
                             <h5>
-                                <span class=\"price\">$handcraft_price</span>
+                                <span class=\"price\">  $handcraft_price</span>
                             </h5>
 
                             <button typ=\"submit\" name=\"add\">Add to cart <i class=\"fas fa-shopping-cart\"></i> </button>
