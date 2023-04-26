@@ -1,27 +1,41 @@
 <?php
 
+if(empty($_POST["artisan_ID"])){
+    echo "<script>alert('ID is required  and should be 5 digits!!!!!!!!!!');</script>";
+    echo "<script>window.history.back();</script>";
+}
+
 if(empty($_POST["firstname"])){
-    die(" First Name is required");
+    echo "<script>alert('First Name is required !!!!!!!!!!');</script>";
+    echo "<script>window.history.back();</script>";
 }
 
 if(empty($_POST["lastname"])){
-    die("Last Name is required");
+    echo "<script>alert('Last Name is required !!!!!!!!!!');</script>";
+    echo "<script>window.history.back();</script>";
 }
 
 if( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-    die("Valid email is required");
+    echo "<script>alert('Valid Email is required !!!!!!!!!!');</script>";
+    echo "<script>window.history.back();</script>";
 }
 
 if(strlen($_POST["password"]) < 6){
-    die("Password should contain at least 6 characters");
+    echo "<script>alert('Password should contain at least 6 characters');</script>";
+    echo "<script>window.history.back();</script>";
+    
 }
 
 if( ! preg_match("/[a-z]/i", $_POST["password"]) ){
-    die("Password should contain at least one letter"); 
+
+    echo "<script>alert('Password should contain at least one letter');</script>";
+    echo "<script>window.history.back();</script>";
 }
 
 if($_POST["password"] !== $_POST["password_confirmation"]){
-    die("Password must match.");
+
+    echo "<script>alert('Password must match');</script>";
+    echo "<script>window.history.back();</script>";
 }
 
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
@@ -44,7 +58,7 @@ $stmt->bind_param("ssssss", $_POST["artisan_ID"], $_POST["firstname"], $_POST["l
                   
 if ($stmt->execute()){
 
-    header("Location: aboutUs.html");  // change this location into profile page 
+    header("Location: profile.html");  // change this location into profile page 
     exit;
     
 } else {

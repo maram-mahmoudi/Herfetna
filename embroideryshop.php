@@ -52,7 +52,8 @@
     <div class="container">
         <div class="row text-center py-5">
             <?php
-                $result= $db->getDataall(); 
+                
+                $result= $db->getData('embroidery'); 
                 while($row = mysqli_fetch_assoc($result)){
                     product($row['handcraft_type'], $row['handcraft_price'], $row['year'], $row['weight'], $row['handcraft_image_link'], $row['handcraft_ID']); 
                 }

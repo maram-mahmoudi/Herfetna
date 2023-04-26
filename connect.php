@@ -21,8 +21,8 @@ class ConnectDB {
         $this->con = $GLOBALS['mysqli'];
     }
 
-    function getData() {
-        $sql= "SELECT * FROM handcraft";
+    function getData($handcraft_type) {
+        $sql= "SELECT * FROM handcraft where handcraft_type = '$handcraft_type'";
 
         $result = mysqli_query($this->con, $sql); 
 
@@ -30,6 +30,17 @@ class ConnectDB {
             return $result;
         }
     }
+    function getDataall() {
+        $sql= "SELECT * FROM handcraft ";
+
+        $result = mysqli_query($this->con, $sql); 
+
+        if(mysqli_num_rows($result)>0){
+            return $result;
+        }
+    }
+
+    
 }
 
 // Create an instance of the ConnectDB class
