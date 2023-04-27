@@ -57,7 +57,7 @@ if (isset($_POST['remove'])){
                     if (isset($_SESSION['cart'])){
                         $product_id = array_column($_SESSION['cart'], 'handcraft_id');
 
-                        $result = $db->getData();
+                        $result = $db->getDataall();
                         while ($row = mysqli_fetch_assoc($result)){
                             foreach ($product_id as $id){
                                 if ($row['handcraft_ID'] == $id){

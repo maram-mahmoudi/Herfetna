@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutUs.html">ABOUT</a></li>
                     <li><a href="signup.html">SIGN IN</a></li>
-                    <li><a href="Shop.php">SHOPPING CART</a></li>
+                    <li><a href="Shop.php">SHOP</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu"></i>

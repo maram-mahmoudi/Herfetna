@@ -338,7 +338,7 @@ h3{
 }
 /*-------------sign up sign in header------------------*/ 
 .sign{
-  height: 45vh;
+  height: 35vh;
   width: 100%;
   background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/annie.jpg?raw=true);
   background-position: center;
@@ -350,6 +350,7 @@ h3{
 
 .sign h1{
   margin-top: 50px;
+  position: center;
 }
 
 
@@ -514,7 +515,9 @@ h3{
 
   
   
-  
+/*------------ shopping header ----------*/ 
+
+
   
   
   

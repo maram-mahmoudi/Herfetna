@@ -1,5 +1,8 @@
 <?php
 
+
+//                <form action=\"<?php echo ($_SERVER['HTTP_REFERER'] == 'http://localhost/dbpro/Herfetna/Shop.php') ? 'Shop.php' : ''; 
+
 function product($handcraft_type, $handcraft_price, $year, $weight, $handcraft_image_link, $handcraft_ID){
     $element = "
             <div class=\"col-md-3 col-sm-6 my-3 my-md-0\">
