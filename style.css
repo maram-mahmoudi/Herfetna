@@ -76,10 +76,10 @@ nav{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #d683c4;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    background: #de92e0;
     position: relative;
     cursor: pointer;
 }
@@ -409,7 +409,7 @@ h3{
     margin-top: 20px;
     border: none;
     border-radius: 4px;
-    background-color: #cd5bc5;
+    background-color: #7bcf93;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -495,7 +495,7 @@ h3{
   height: 40px;
   margin-top: 20px;
   border: none;
-  background-color: #c149bf;
+  background-color: #7bcf93;
   color: white;
   font-size: 18px;
   border-radius: 5px;
@@ -503,7 +503,7 @@ h3{
 }
 
 .login-box button:hover {
-  background-color: #a33aaf;
+  background-color: #5cd37e;
 }
 
 /* -------------------------------------- index.php --------------------------------------------------*/ 
