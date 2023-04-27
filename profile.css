@@ -1,47 +1,65 @@
 .container {
-    max-width: 800px;
+    width: 50%;
     margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
     padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+    font-size: 30px;
+    color: #ffffff;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+h2 {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
 }
 
 label {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-input[type="file"],
-textarea {
+input[type="text"], select {
     width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-select,
-input[type="number"],
-input[type="text"],
-input[type="date"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
     border: none;
-    border-radius: 5px;
-   
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+button {
+    background-color: #7ac98d;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5aad75;
+}
+
+.btn{
+    color: #ffffff;
 }

@@ -1,8 +1,14 @@
 img{
     max-width: 100%;
-    height: auto;
+    height: auto ;
     background: lightblue;
     background: radial-gradient(white 30%, lightblue 70%);
+    object-fit: cover;
+    display: flex;
+    
+}
+.container{
+    height: 300px;
 }
 
 .fa-star,
@@ -28,3 +34,13 @@ img{
 .price-details h6{
     padding: 3% 2%;
 }
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .products-container .col-md-4 {
+    flex: 1;
+    margin: 10px;
+  }

@@ -1,12 +1,15 @@
 <?php
 
+
+//                <form action=\"<?php echo ($_SERVER['HTTP_REFERER'] == 'http://localhost/dbpro/Herfetna/Shop.php') ? 'Shop.php' : ''; 
+
 function product($handcraft_type, $handcraft_price, $year, $weight, $handcraft_image_link, $handcraft_ID){
     $element = "
             <div class=\"col-md-3 col-sm-6 my-3 my-md-0\">
                 <form action=\"Shop.php\" method=\"post\">
                     <div class=\"card shadow\">
                         <div>
-                            <img src=\"$handcraft_image_link\" alt=\"\" class=\"img-fluid card-img-top\">
+                            <img src=\"images/$handcraft_image_link\" alt=\"\" class=\"img-fluid card-img-top\">
                         </div>
                         <div class=\"card-body\">
                             <h5 class=\"card-title\"> Material: $handcraft_type </h5>
@@ -47,7 +50,7 @@ function cartElement($handcraft_image_link, $handcraft_type, $handcraft_price, $
                     <div class=\"border rounded\">
                         <div class=\"row bg-white\">
                             <div class=\"col-md-3 pl-0\">
-                                <img src=$handcraft_image_link alt=\"Image1\" class=\"img-fluid\">
+                                <img src=images/$handcraft_image_link alt=\"Image1\" class=\"img-fluid\">
                             </div>
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$handcraft_type</h5>

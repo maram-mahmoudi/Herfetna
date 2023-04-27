@@ -1,41 +1,40 @@
 <?php
 
 if(empty($_POST["artisan_ID"])){
-    echo "<script>alert('ID is required  and should be 5 digits!!!!!!!!!!');</script>";
-    echo "<script>window.history.back();</script>";
+    die("id required");
 }
 
 if(empty($_POST["firstname"])){
-    echo "<script>alert('First Name is required !!!!!!!!!!');</script>";
-    echo "<script>window.history.back();</script>";
+   
+    die("First Name is required");
 }
 
 if(empty($_POST["lastname"])){
-    echo "<script>alert('Last Name is required !!!!!!!!!!');</script>";
-    echo "<script>window.history.back();</script>";
+    die('Last Name is required !!!!!!!!!!');
+   
 }
 
 if( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-    echo "<script>alert('Valid Email is required !!!!!!!!!!');</script>";
-    echo "<script>window.history.back();</script>";
+    die('Valid Email is required !!!!!!!!!!');
+   
 }
 
 if(strlen($_POST["password"]) < 6){
-    echo "<script>alert('Password should contain at least 6 characters');</script>";
-    echo "<script>window.history.back();</script>";
+    die('Password should contain at least 6 characters');
+
     
 }
 
 if( ! preg_match("/[a-z]/i", $_POST["password"]) ){
 
-    echo "<script>alert('Password should contain at least one letter');</script>";
-    echo "<script>window.history.back();</script>";
+    die('Password should contain at least one letter');
+    
 }
 
 if($_POST["password"] !== $_POST["password_confirmation"]){
 
-    echo "<script>alert('Password must match');</script>";
-    echo "<script>window.history.back();</script>";
+   die('Password must match');
+    
 }
 
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);

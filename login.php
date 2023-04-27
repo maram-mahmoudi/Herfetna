@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             $_SESSION["user_id"] = $user["artisan_ID"];
             
-            header("Location: index.php");
+            header("Location: profile.html");
             exit;
         }
         else{
@@ -30,9 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
     }
-    else {
-        print("whatver");
-    }
+   
     
     $is_invalid = true;
 }
@@ -58,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutUs.html">ABOUT</a></li>
                     <li><a href="signup.html">SIGN IN</a></li>
-                    <li><a href="Shop.php">SHOPPING CART</a></li>
+                    <li><a href="Shop.php">SHOP</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu"></i>
