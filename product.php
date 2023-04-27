@@ -50,7 +50,7 @@ function cartElement($handcraft_image_link, $handcraft_type, $handcraft_price, $
                     <div class=\"border rounded\">
                         <div class=\"row bg-white\">
                             <div class=\"col-md-3 pl-0\">
-                                <img src=$handcraft_image_link alt=\"Image1\" class=\"img-fluid\">
+                                <img src=images/$handcraft_image_link alt=\"Image1\" class=\"img-fluid\">
                             </div>
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$handcraft_type</h5>
