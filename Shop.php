@@ -38,8 +38,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopping</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,21 +48,21 @@
 
 <body>
 
-    <section class="sign">
-            <nav> 
-                <div class="nav-links" id="navLinks"> 
-                    <i class="fa fa-times" onclick="hideMenu()" ></i>
-                    <ul>  
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="aboutUs.html">ABOUT</a></li>
-                        <li><a href="login.php">SIGN IN</a></li>
-                        <li><a href="Shop.php">SHOP</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu"></i>
-            </nav>
-            <h1> Weclcome to Our Store </h1>
-        </section>
+<section class="sign">
+        <nav> 
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>  
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="signup.html">SIGN IN</a></li>
+                    <li><a href="Shop.php">SHOP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+        <h1>  Welcome to Our Store </h1>
+    </section>
 
 
 

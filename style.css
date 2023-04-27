@@ -293,7 +293,7 @@ h3{
 }
 
 .sub-header{
-    height: 60vh;
+    height: 40vh;
     width: 100%;
     background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/annie.jpg?raw=true);
     background-position: center;
@@ -303,7 +303,7 @@ h3{
 }
 
 .sub-header h1{
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .about-us{
     width: 80%; 
@@ -317,7 +317,7 @@ h3{
 }
 .about-col img{
     width: 100%; 
-    padding-top: 50;
+    padding-top: 30;
 }
 .about-col h1{
     padding-top: 0;
@@ -338,7 +338,7 @@ h3{
 }
 /*-------------sign up sign in header------------------*/ 
 .sign{
-  height: 35vh;
+  height: 30vh;
   width: 100%;
   background-image: linear-gradient(rgba(50, 53, 64, 0.381),rgba(29, 32, 45, 0.5)), url(https://github.com/maram-mahmoudi/Herfetna/blob/main/images/annie.jpg?raw=true);
   background-position: center;
@@ -349,7 +349,7 @@ h3{
 }
 
 .sign h1{
-  margin-top: 50px;
+  margin-top: 0px;
   position: center;
 }
 
@@ -409,7 +409,7 @@ h3{
     margin-top: 20px;
     border: none;
     border-radius: 4px;
-    background-color: #49c1a2;
+    background-color: #cd5bc5;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -495,7 +495,7 @@ h3{
   height: 40px;
   margin-top: 20px;
   border: none;
-  background-color: #49c1a2;
+  background-color: #c149bf;
   color: white;
   font-size: 18px;
   border-radius: 5px;
@@ -503,7 +503,7 @@ h3{
 }
 
 .login-box button:hover {
-  background-color: #3aaf91;
+  background-color: #a33aaf;
 }
 
 /* -------------------------------------- index.php --------------------------------------------------*/ 

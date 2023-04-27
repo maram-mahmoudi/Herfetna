@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             $_SESSION["user_id"] = $user["artisan_ID"];
             
-            header("Location: index.php");
+            header("Location: profile.html");
             exit;
         }
         else{
@@ -30,9 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
     }
-    else {
-        print("whatver");
-    }
+   
     
     $is_invalid = true;
 }

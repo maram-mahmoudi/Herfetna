@@ -9,7 +9,7 @@ function product($handcraft_type, $handcraft_price, $year, $weight, $handcraft_i
                 <form action=\"Shop.php\" method=\"post\">
                     <div class=\"card shadow\">
                         <div>
-                            <img src=\"$handcraft_image_link\" alt=\"\" class=\"img-fluid card-img-top\">
+                            <img src=\"images/$handcraft_image_link\" alt=\"\" class=\"img-fluid card-img-top\">
                         </div>
                         <div class=\"card-body\">
                             <h5 class=\"card-title\"> Material: $handcraft_type </h5>
